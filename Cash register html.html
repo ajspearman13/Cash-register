@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <link href="Cash-register-css-file.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  
+  <script src="Cash-Register-Js.js" defer></script>
+  
+</head>
+<body>
+ <h1 id="h1" >Cash register </h1>
+ <from> 
+     <label for="itemInput"> Item</label>
+     <br>
+     <input id="itemInput" type="text" placeholder="Type here" list="ListItems" >
+     <datalist id="ListItems">
+        <option>beef</option>
+        <option>chicken</option>
+        <option>pork</option>
+        <option>goat</option>
+
+        <option>bananas</option>
+        <option>apples</option>
+        <option>grapes</option>
+        <option>peaches</option> 
+
+        <option>shirts</option>
+        <option>shoes</option>
+        <option>pants</option>
+        <option>hats</option>
+     </datalist>
+     <br>
+    <label for="numberOfItems">Quantity </label>
+    <br>
+     <input type="number" id="numberOfItems" min= "1" placeholder="Select here" >
+     <br>
+     <button onclick="AddToCart()"  > Add To Cart</button>
+     <hr>
+ </form>
+
+ <form> 
+   <h2>Cart</h2> 
+      <ol id="ol">
+          
+      </ol>
+    <div id="TotalPriceConatiner">
+      <p> Total</p>
+      <p id="totalPrice"></p>
+    <div>
+ </form>
+ 
+</body>
+
+
+</html>
